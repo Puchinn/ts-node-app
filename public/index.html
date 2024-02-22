@@ -7,34 +7,142 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="section_form">
-      <form id="consultation-form" class="feed-form" action="#">
-        <label for="fullname">
-          <p>Nombre y Apellido *</p>
-          <input required="true" id="fullname" type="text" />
-        </label>
-        <label for="provincia">
-          <p>Provincia</p>
-          <select name="provincia" id="provincia">
-            <option value="-" default>--</option>
-          </select>
-        </label>
-        <label for="calle">
-          <p>Calle *</p>
-          <input required="true" id="calle" type="text" />
-        </label>
-        <label for="altura">
-          <p>Altura *</p>
-          <input required="true" id="altura" type="text" />
-        </label>
-
-        <label for="localidad">
-          <p>Localidad</p>
-          <select name="localidad" id="localidad"></select>
-        </label>
-        <button class="button_submit">ORDER</button>
-      </form>
-    </section>
+    <div class="container">
+      <header>Registrar envio</header>
+      <div class="progress-bar">
+        <div class="step">
+          <p>Origen</p>
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Destino</p>
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Paquete</p>
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Cotizacion</p>
+          <div class="bullet">
+            <span>4</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+      <div class="form-outer">
+        <form action="#">
+          <div class="page slide-page">
+            <div class="title">Datos de origen:</div>
+            <div class="field">
+              <label class="label" for="nya-o">Nombre y Apellido:</label>
+              <input name="nya-o" id="nya-o" type="text" required />
+            </div>
+            <div class="field">
+              <label class="label" for="pr-o">Provincia:</label>
+              <select class="pr" name="pr-o" id="pr-o">
+                <option value="" default>---</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="label" for="lc-o">Localidad:</label>
+              <input name="lc-o" type="text" id="lc-o" />
+            </div>
+            <div class="field">
+              <label class="label" for="cya-o">Calle y Altura:</label>
+              <input name="cya-o" type="text" id="cya-o" />
+            </div>
+            <div class="field">
+              <label class="label" for="cp-o">Codigo Postal:</label>
+              <input type="text" id="cp-o" />
+            </div>
+            <div class="field">
+              <label class="label" for="sc-o">Llevar a sucursal:</label>
+              <select class="sc" name="sc-o" id="sc-o">
+                <option value="-" default>---</option>
+              </select>
+            </div>
+            <div class="field">
+              <button class="firstNext next">Next</button>
+            </div>
+          </div>
+          <div class="page">
+            <div class="title">Datos del destino:</div>
+            <div class="field">
+              <label class="label" for="nya-d">Nombre y Apellido:</label>
+              <input name="nya-d" type="text" id="nya-d" />
+            </div>
+            <div class="field">
+              <label class="label" for="pr-d">Provincia:</label>
+              <select class="pr" name="pr-d" id="pr-d">
+                <option value="-" default>---</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="label" for="sc-d">Sucursal de destino:</label>
+              <select class="sc" name="sc-d" id="sc-d">
+                <option value="-" default>---</option>
+              </select>
+            </div>
+            <div class="field btns">
+              <button class="prev-1 prev">Previous</button>
+              <button class="next-1 next">Next</button>
+            </div>
+          </div>
+          <div class="page">
+            <div class="title">Datos del paquete:</div>
+            <div class="field">
+              <label class="label" for="peso">Peso en kg:</label>
+              <input name="peso" type="number" id="peso" />
+            </div>
+            <div class="field">
+              <label class="label" for="altura">Altura en cm:</label>
+              <input name="altura" type="number" id="altura" />
+            </div>
+            <div class="field">
+              <label class="label" for="ancho">Ancho en cm:</label>
+              <input name="ancho" type="number" id="ancho" />
+            </div>
+            <div class="field">
+              <label class="label" for="largo">Largo en cm:</label>
+              <input name="largo" type="number" id="largo" />
+            </div>
+            <div class="field">
+              <label class="label" for="valor">Valor del paquete:</label>
+              <input name="valor" type="number" id="valor" />
+            </div>
+            <div class="field btns">
+              <button class="prev-2 prev">Previous</button>
+              <button class="next-2 next">Next</button>
+            </div>
+          </div>
+          <div class="page">
+            <div class="title">Detalles:</div>
+            <div class="field">
+              <div class="label">Username</div>
+              <input type="text" />
+            </div>
+            <div class="field">
+              <div class="label">Password</div>
+              <input type="password" />
+            </div>
+            <div class="field btns">
+              <button class="prev-3 prev">Previous</button>
+              <button class="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </html>
