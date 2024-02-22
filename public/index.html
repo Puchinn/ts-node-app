@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section_form">
+      <form id="consultation-form" class="feed-form" action="#">
+        <label for="fullname">
+          <p>Nombre y Apellido *</p>
+          <input required="true" id="fullname" type="text" />
+        </label>
+        <label for="provincia">
+          <p>Provincia</p>
+          <select name="provincia" id="provincia">
+            <option value="-" default>--</option>
+          </select>
+        </label>
+        <label for="calle">
+          <p>Calle *</p>
+          <input required="true" id="calle" type="text" />
+        </label>
+        <label for="altura">
+          <p>Altura *</p>
+          <input required="true" id="altura" type="text" />
+        </label>
+
+        <label for="localidad">
+          <p>Localidad</p>
+          <select name="localidad" id="localidad"></select>
+        </label>
+        <button class="button_submit">ORDER</button>
+      </form>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

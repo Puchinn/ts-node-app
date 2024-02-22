@@ -1,0 +1,8 @@
+{
+  "semi": true,
+  "tabWidth": 2,
+  "singleQuote": false,
+  "filepath": "./src",
+  "trailingComma": "all",
+  "printWidth": 120
+}
